@@ -1,0 +1,123 @@
+#contact {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 250px;
+    height: 385px;
+    background: #121212;
+    backdrop-filter: blur(2.5px);
+    border-radius: 23px;
+    padding: 26px;
+
+    .name,.lastname,.mail,.object,.subject{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Figtree';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: $form-white;
+        margin-bottom: 15px;
+
+    }
+
+    label {
+        font-family: 'figtree';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        letter-spacing: 0.05em;
+        color: $form-white;
+        width: 80%;
+        margin-bottom: 3px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    input {
+        width: 80%;
+        height: 20px;
+        padding: 0 5px;
+        font-size: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        outline: none;
+        border-radius: 2px;
+
+        &:focus {
+            border-bottom: 2px solid $primary-blue;
+        }
+    }
+
+    textarea {
+        width: 80%;
+        height: 63px;
+        padding: 0 5px;
+        font-size: 10px;
+        outline: none;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:focus {
+            border-bottom: 2px solid $primary-blue;
+        }
+    }
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $form-white;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 20%);
+    border-radius: 2px;
+    cursor: pointer;
+    width: 30px;
+    margin: auto;
+
+    &:hover {
+        background: $primary-blue;
+    }
+
+    a {
+        display: inline-block;
+        font-family: "figtree";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5px;
+        line-height: 4px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: black;
+        padding: 5px;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
